@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Origin</th>
+              <th scope="col">Temperament</th>
+              <th scope="col">Colors</th>
+              <th scope="col">Picture</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cat of listCats">
+              <th scope="row">{{cat.id}}</th>
+              <td>{{cat.name}}</td>
+              <td>{{cat.description}}</td>
+              <td>{{cat.origin}}</td>
+              <td>{{cat.temperament}}</td>
+              <td>{{cat.colors}}</td>
+              <td><img width="300" height="360" src={{cat.image}}></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
